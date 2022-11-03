@@ -3,12 +3,15 @@
 :root {
     --color-dark: #0a0a11;
     --color-light: #ffffff;
+    --color-blue: #0000ff;
+    --transition-md: all 0.25s linear;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: var(--transition-md);
 }
 
 body {
@@ -20,7 +23,6 @@ body {
 }
 
 .main-content {
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -30,16 +32,15 @@ body {
 }
 
 .title {
-    font-size: 10rem;
+    font-size: 12vw;
+    word-wrap: break-word;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(90deg, rgb(48, 220, 233), rgb(232, 102, 158));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-blue);
 }
 
 .message-sm {
     font-size: 0.7rem;
+    color: var(--color-blue);
 }
 
 @media (prefers-color-scheme: dark) {
